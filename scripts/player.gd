@@ -17,4 +17,5 @@ func _physics_process(delta: float) -> void:
 	elif (!zero and !moving):
 		moving=true
 		$PlayerSounds.play()
+	position += SPEED*delta*dir
 	move_and_slide()

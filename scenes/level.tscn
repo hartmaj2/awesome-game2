@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=4 uid="uid://cctcx57f3wqjw"]
+[gd_scene load_steps=5 format=4 uid="uid://cctcx57f3wqjw"]
 
 [ext_resource type="Texture2D" uid="uid://ccumciw2ma5k5" path="res://assets/grass.png" id="1_w2of7"]
+[ext_resource type="PackedScene" uid="uid://cqawfnxg2w36o" path="res://scenes/player.tscn" id="2_fovg7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1itmj"]
 texture = ExtResource("1_w2of7")
@@ -89,3 +90,9 @@ tile_map_data = PackedByteArray("AAABAAEAAQABAAIAAAACAAEAAQABAAIAAAADAAEAAQABAAI
 tile_set = SubResource("TileSet_rgocp")
 rendering_quadrant_size = 32
 collision_visibility_mode = 1
+
+[node name="Player" parent="." instance=ExtResource("2_fovg7")]
+position = Vector2(205, -60)
+scale = Vector2(0.25, 0.25)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
