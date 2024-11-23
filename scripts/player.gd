@@ -11,4 +11,10 @@ func _physics_process(delta: float) -> void:
 	Input.get_action_strength("down")-Input.get_action_strength("up"))
 	shooting = Input.is_action_just_pressed("shoot")
 	var zero = Vector2.ZERO
+	if (zero and moving):
+		moving = false
+		$PlayerSounds.stop()
+	elif (!zero and !moving):
+		moving=true
+		$PlayerSounds.play()
 	move_and_slide()
