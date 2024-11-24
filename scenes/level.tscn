@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_t0xxj"]
 [ext_resource type="Texture2D" uid="uid://ccumciw2ma5k5" path="res://assets/grass.png" id="1_w2of7"]
 [ext_resource type="PackedScene" uid="uid://cqawfnxg2w36o" path="res://scenes/player.tscn" id="2_fovg7"]
-[ext_resource type="PackedScene" uid="uid://b2r5eapldya2u" path="res://scenes/settings.tscn" id="4_n2ojd"]
+[ext_resource type="PackedScene" uid="uid://bxt6265d0oqkl" path="res://scenes/settings.tscn" id="4_n2ojd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1itmj"]
 texture = ExtResource("1_w2of7")
