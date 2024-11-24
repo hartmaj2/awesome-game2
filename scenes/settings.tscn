@@ -3,17 +3,17 @@
 [ext_resource type="Script" path="res://scripts/settings.gd" id="1_xvbmd"]
 
 [node name="Settings" type="Control"]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_xvbmd")
 
 [node name="Button" type="Button" parent="."]
-process_mode = 3
 layout_mode = 0
-offset_left = -156.0
-offset_top = -97.0
-offset_right = -106.0
-offset_bottom = -66.0
+offset_left = -93.0
+offset_top = -54.0
+offset_right = -43.0
+offset_bottom = -23.0
 text = "BACK"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

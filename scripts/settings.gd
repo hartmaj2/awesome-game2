@@ -1,9 +1,4 @@
 extends Control
-var prev = null
-
-
-#func _ready() -> void:
-	#visible = false
 	 
 func _input(event : InputEvent):
 	if (event.is_action_pressed("settings")):
