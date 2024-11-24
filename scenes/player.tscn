@@ -19,3 +19,5 @@ shape = SubResource("RectangleShape2D_mvg2f")
 
 [node name="PlayerSounds" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_755i1")
+
+[connection signal="finished" from="PlayerSounds" to="." method="_on_player_sounds_finished"]
