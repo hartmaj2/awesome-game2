@@ -19,6 +19,8 @@ func _physics_process(delta: float) -> void:
 		moving=true
 		$PlayerSounds.play()
 	elif (!zero and sound_end):
+		$PlayerSounds.volume_db = GM.volume
+		print($PlayerSounds.volume_db)
 		$PlayerSounds.play()
 		sound_end = false
 	position += SPEED*delta*dir

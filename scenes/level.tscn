@@ -103,4 +103,4 @@ scale = Vector2(0.25, 0.25)
 zoom = Vector2(5, 5)
 
 [node name="Settings" parent="Player/Camera2D" instance=ExtResource("4_n2ojd")]
-scale = Vector2(4, 4)
+visible = false
