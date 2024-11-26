@@ -8,6 +8,7 @@ var shooting = false
 var sound_end = false
 
 func _physics_process(delta: float) -> void:
+	$PlayerSounds.volume_db = GM.volume
 	dir = Vector2(Input.get_action_strength("right")-Input.get_action_strength("left"),
 	Input.get_action_strength("down")-Input.get_action_strength("up"))
 	shooting = Input.is_action_just_pressed("shoot")
@@ -19,7 +20,6 @@ func _physics_process(delta: float) -> void:
 		moving=true
 		$PlayerSounds.play()
 	elif (!zero and sound_end):
-		$PlayerSounds.volume_db = GM.volume
 		print($PlayerSounds.volume_db)
 		$PlayerSounds.play()
 		sound_end = false
