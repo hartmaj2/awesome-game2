@@ -5,7 +5,6 @@ func _ready() -> void:
 	$HSlider.value = GM.volume
 func _input(event : InputEvent):
 	if (event.is_action_pressed("settings")):
-		print("esc")
 		visible = !visible
 		get_tree().paused = !get_tree().paused
 
