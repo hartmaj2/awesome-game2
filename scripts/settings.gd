@@ -1,4 +1,6 @@
 extends Control
+
+var jakub = true
 func _ready() -> void:
 	$HSlider.value = GM.volume
 func _input(event : InputEvent):
@@ -14,4 +16,4 @@ func _on_button_pressed() -> void:
 
 
 func _on_h_slider_value_changed(value: float) -> void:
-	GM.update_volume(value)
+	GM.volume = value
